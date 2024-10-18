@@ -1,0 +1,40 @@
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &__list{
+    display: flex;
+    @include listReset();
+  }
+  &__item:not(:last-child){
+    margin-right: 79px;
+  }
+  &__item_hidden{
+    display: none;
+  }
+  &__link{
+    display: block;
+    padding: 0 5px;
+    font-family:TTFirsNeue, Helvetica, sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $mainBackground;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover{
+      color: $hoverTextColor;
+    }
+    &:focus:not(:active){
+      color: $mainBackground;
+      background-color: $focusMenuBg;
+    }
+    &:active{
+      color: $activeTextColor;
+    }
+  }
+
+  &__phone{
+    display: none;
+  }
+
+}

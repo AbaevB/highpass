@@ -22,9 +22,9 @@
 	<header class="header">
     <div class="container header__container">
        <button class="burger header__burger d-none" type="button" aria-label="Открыть главное меню">
-    <span class="burger__span"></span>
-    <span class="burger__span"></span>
-    <span class="burger__span"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
 </button>
 
        <a href="#" class="logo header__logo">
@@ -33,6 +33,14 @@
 
        <nav class="nav header__nav">
   <ul class="nav__list" aria-label="@@aria-label">
+    <li class="nav__item nav__item_hidden">
+      <button class="close-btn nav__close" type="button" aria-label="закрыть главное меню">
+<svg class="close__icon" width="18" height="18">
+  <use href="img/sprite.svg#sprite--round_button"></use>
+</svg>
+</button>
+
+    </li>
     <li class="nav__item">
       <a href="#about" class="nav__link">
       О&nbsp;студии
@@ -63,8 +71,8 @@
     </a>
     </li>
   </ul>
-  <div class="nav__phone d-none">
-    <a href="tel:+749542423532" class="phone-link">
+  <div class="nav__phone">
+    <a href="tel:+749542423532" class="phone-link @@class2">
   +7 495 424-23-532
 </a>
 
@@ -74,24 +82,24 @@
        <form  class="search-form header__search-form d-none" method="post"  id="headerSeach">
   <fieldset class="search-form__fieldset">
     <input class="search-form__input" type="text" name="search" id="search" placeholder="Что&nbsp;будем иcкать?">
-    <button class="search search-form__search" type="submit" aria-label="Поиск">
-  <svg class="search-icon" width="20" height="20">
+    <button class="search-btn search-form__search-btn" type="submit" aria-label="Поиск">
+  <svg class="search-icon" width="25" height="25">
     <use href="img/sprite.svg#sprite--search" />
   </svg>
 </button>
 
 </fieldset>
 
-  <button class="close search-form__close" type="button" aria-label="закрыть поиск">
-<svg class="close__icon" width="20" height="20">
+  <button class="close-btn search-form__close-btn" type="button" aria-label="закрыть поиск">
+<svg class="close__icon" width="18" height="18">
   <use href="img/sprite.svg#sprite--round_button"></use>
 </svg>
 </button>
 
 </form>
 
-       <button class="search header__search" type="button" aria-label="Поиск">
-  <svg class="search-icon" width="20" height="20">
+       <button class="search-btn header__search-btn" type="button" aria-label="Поиск">
+  <svg class="search-icon" width="25" height="25">
     <use href="img/sprite.svg#sprite--search" />
   </svg>
 </button>

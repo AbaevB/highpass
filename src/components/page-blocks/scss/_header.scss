@@ -1,0 +1,21 @@
+.header{
+  position: relative;
+  z-index: z(header);
+  padding-top: 30px;
+  padding-bottom: 29px;
+  background-color: $backgroundDark;
+  &__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__search-form{
+    position: absolute;
+    right: 0;
+    top: 4px;
+    z-index: z(search-form);
+  }
+}
