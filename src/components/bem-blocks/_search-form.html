@@ -1,0 +1,16 @@
+<form  class="search-form @@class2 @@class3" method="post"  id="@@id">
+  <fieldset class="search-form__fieldset">
+    <input class="search-form__input" type="text" name="search" id="search" placeholder="Что&nbsp;будем иcкать?">
+    @@include('../bem-blocks/buttons/_search.html',{
+      "class2":"search-form__search",
+      "type":"submit",
+      "aria-label":"Поиск"
+    })
+</fieldset>
+
+  @@include('../bem-blocks/buttons/_close.html',{
+    "class2":"search-form__close",
+    "type":"button",
+    "aria-label":"закрыть поиск"
+  })
+</form>

@@ -1,1 +1,26 @@
-<header class="header"></header>
+<header class="header">
+    <div class="container header__container">
+       @@include('../bem-blocks/buttons/_burger.html',{
+        "class2":"header__burger",
+        "class3":"d-none",
+        "type":"button",
+        "aria-label":"Открыть главное меню"
+       })
+       @@include('../bem-blocks/_logo.html',{
+        "class2":"header__logo"
+       })
+       @@include('../bem-blocks/_nav.html',{
+        "class2":"header__nav"
+       })
+       @@include('../bem-blocks/_search-form.html',{
+        "class2":"header__search-form",
+        "class3":"d-none",
+        "id":"headerSeach"
+       })
+       @@include('../bem-blocks/buttons/_search.html',{
+        "class2":"header__search",
+        "type":"button",
+        "aria-label":"Поиск"
+      })
+    </div>
+</header>
