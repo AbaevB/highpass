@@ -1,8 +1,8 @@
 .header{
   position: relative;
   z-index: z(header);
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-top: 24px;
+  padding-bottom: 19px;
   background-color: $backgroundDark;
   &__container{
     position: relative;
@@ -17,5 +17,10 @@
     right: 0;
     top: 4px;
     z-index: z(search-form);
+  }
+
+  &__search-btn{
+    padding: 0;
+    padding-left: 8px;
   }
 }
