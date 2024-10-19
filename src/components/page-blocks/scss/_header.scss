@@ -1,5 +1,5 @@
 .header{
-  position: relative;
+  /*position: relative;*/
   z-index: z(header);
   padding-top: 24px;
   padding-bottom: 19px;
@@ -9,12 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   &__search-form{
     position: absolute;
-    right: 0;
+    right: 95px;
     top: 4px;
     z-index: z(search-form);
   }

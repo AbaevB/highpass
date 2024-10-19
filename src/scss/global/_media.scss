@@ -1,0 +1,17 @@
+@media(max-width: 1200px){
+  .container  {
+    padding: 0 30px;
+  }
+
+  /*.header{
+    &__container  {
+      justify-content: space-around;
+    }
+  }*/
+
+  .nav{
+    &__item:not(:last-child){
+      margin-right: 33px;
+    }
+  }
+}

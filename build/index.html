@@ -81,7 +81,7 @@
   </div>
 </nav>
 
-       <form  class="search-form header__search-form d-none" method="post"  id="headerSeach">
+       <form  class="search-form header__search-form form" method="get" action="https://jsonplaceholder.typicode.com/posts" id="headerSeach">
   <fieldset class="search-form__fieldset">
     <input class="search-form__input" type="text" name="search" id="search" placeholder="Что&nbsp;будем иcкать?">
     <button class="search-btn search-form__search-btn" type="submit" aria-label="Поиск">
@@ -90,13 +90,14 @@
   </svg>
 </button>
 
-</fieldset>
-
-  <button class="close-btn search-form__close-btn" type="button" aria-label="закрыть поиск">
+    <button class="close-btn search-form__close-btn" type="button" aria-label="закрыть поиск">
 <svg class="close__icon" width="18" height="18">
   <use href="img/sprite.svg#sprite--round_button"></use>
 </svg>
 </button>
+
+</fieldset>
+
 
 </form>
 

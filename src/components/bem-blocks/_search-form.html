@@ -1,4 +1,4 @@
-<form  class="search-form @@class2 @@class3" method="post"  id="@@id">
+<form  class="search-form @@class2 @@class3" method="get" action="https://jsonplaceholder.typicode.com/posts" id="@@id">
   <fieldset class="search-form__fieldset">
     <input class="search-form__input" type="text" name="search" id="search" placeholder="Что&nbsp;будем иcкать?">
     @@include('../bem-blocks/buttons/_search-btn.html',{
@@ -6,11 +6,12 @@
       "type":"submit",
       "aria-label":"Поиск"
     })
+    @@include('../bem-blocks/buttons/_close-btn.html',{
+      "class2":"search-form__close-btn",
+      "type":"button",
+      "aria-label":"закрыть поиск"
+    })
 </fieldset>
 
-  @@include('../bem-blocks/buttons/_close-btn.html',{
-    "class2":"search-form__close-btn",
-    "type":"button",
-    "aria-label":"закрыть поиск"
-  })
+
 </form>
